@@ -9,7 +9,7 @@ const str = process.argv[2];
 const password = process.argv[3];
 
 if (!str || !password) {
-  console.error('Usage: node decrypt.js <encryptedFilePath> <password>');
+  console.error('Usage: node decrypt.js <fileContent> <password>');
   process.exit(1);
 }
 
