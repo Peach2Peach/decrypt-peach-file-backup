@@ -16,6 +16,8 @@ if (!str || !password) {
 const decyptedText = decrypt(str, password);
 const content = JSON.parse(decyptedText);
 
-console.log(`\nMnemonic:\n${content.mnemonic}\n`);
+console.log(`\nDecrypted content:\n${JSON.stringify(content, null, 2)}\n`);
+console.log(`Public Key:\n${content.publicKey}\n`);
+console.log(`Mnemonic:\n${content.mnemonic}\n`);
 console.log(`PGP Private Key:\n${content.pgp.privateKey}\n`);
 console.log(`PGP Public Key:\n${content.pgp.publicKey}`);
